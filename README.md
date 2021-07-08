@@ -8,7 +8,7 @@ npm i dota2guilds
 
 ## Usage
 ```js
-let dg = require('dota2guilds')
+const dg = require('dota2guilds')
 
 dg.getByID(115638, guild => {
     if( guild.error ) throw guild.error
