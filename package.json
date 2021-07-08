@@ -1,0 +1,24 @@
+{
+  "name": "dota2guilds",
+  "version": "1.0.0",
+  "description": "Get information about Dota2 guilds",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/getByID.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nesilar/dota2guilds"
+  },
+  "bugs": {
+    "url": "https://github.com/nesilar/dota2guilds/issues"
+  },
+  "keywords": [
+    "dota2",
+    "dota",
+    "guilds",
+    "steam"
+  ],
+  "author": "Nesilar",
+  "license": "MIT"
+}
