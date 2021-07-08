@@ -3,7 +3,7 @@
 
 ## Installation
 ```sh
-WIP
+npm i dota2guilds
 ```
 
 ## Usage
