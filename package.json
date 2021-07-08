@@ -1,6 +1,6 @@
 {
   "name": "dota2guilds",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get information about Dota2 guilds",
   "main": "index.js",
   "scripts": {
