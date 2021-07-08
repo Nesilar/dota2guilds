@@ -57,14 +57,20 @@ async function makeRequest(url, param, callback) {
     let guild
 
     let req = https.get(url, res => {
-        let data = [];
+        let data = []
 
         res.on('data', chunk => {
-            data.push(chunk);
+            data.push(chunk)
         });
 
         res.on('end', () => {
-            const json = JSON.parse(Buffer.concat(data).toString());
+            let json
+
+            try {
+                json = JSON.parse(Buffer.concat(data).toString())
+            } catch (error) {
+                return callback( { error } )
+            }
 
             if(param.type === "id") {
                 if(!json.success) return callback( { error: `Can't find guild with guild id '${param.id}'` } )
